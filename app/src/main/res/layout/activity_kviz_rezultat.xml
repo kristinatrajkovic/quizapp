@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadinakraj"
+    tools:context=".KvizRezultat">
+
+    
+    <TextView
+        android:id="@+id/zavrsen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="Uspešno ste završili kviz!"
+        android:textColor="#CC000000"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_below="@id/zavrsen"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TacanOdgovor"
+            android:text="Tačani odgovori: 0"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#00C853"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NetacanOdgovor"
+            android:layout_marginTop="5dp"
+            android:text="Netačni odgovori: 0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zapocniNoviKvizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/green20"
+        android:text="Započni novi kviz"
+        android:textColor="#CC000000" />
+    
+</RelativeLayout>
